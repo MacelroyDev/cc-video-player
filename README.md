@@ -2,6 +2,8 @@
 
 Convert video files to files playable on the ComputerCraft computers. Requires a monitor and speaker to fully function.
 
+This is a fork created by MacelroyDev after some debugging for CC:Tweaked 1.113.1 for Minecraft 1.20.1.
+
 ## Installation
 
 ```bash
@@ -10,7 +12,7 @@ cd cc-video-player
 pip install -r requirements.txt
 ```
 
-Also download [FFmpeg][https://www.ffmpeg.org/] and add ffmpeg.exe, ffplay.exe, and ffprobe.exe to the main folder.
+Also download [FFmpeg](https://www.ffmpeg.org/) and add ffmpeg.exe, ffplay.exe, and ffprobe.exe to the main folder.
 
 ## Usage
 
