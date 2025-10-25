@@ -10,6 +10,8 @@ cd cc-video-player
 pip install -r requirements.txt
 ```
 
+Also download [FFmpeg][https://www.ffmpeg.org/] and add ffmpeg.exe, ffplay.exe, and ffprobe.exe to the main folder.
+
 ## Usage
 
 ```bash
