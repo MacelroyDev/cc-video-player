@@ -1,3 +1,7 @@
 video.nfv
 audio.dfpwm
 __pycache__/
+*.mp4
+ffmpeg.exe
+ffplay.exe
+ffprobe.exe

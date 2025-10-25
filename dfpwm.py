@@ -1,11 +1,12 @@
 # This code was ported from https://github.com/SquidDev-CC/music.madefor.cc
 # All credit goes to SquidDev-CC
+# Modified by MacelroyDev 10/2025
 
 import numpy as np
 from pydub import AudioSegment
 from io import BytesIO
 
-SAMPLE_RATE = 48000
+#SAMPLE_RATE = 48000
 PREC = 10
 
 def encode_dfpwm(input_data):
@@ -13,7 +14,7 @@ def encode_dfpwm(input_data):
     strength = 0
     previous_bit = False
 
-    out = np.zeros(len(input_data) // 8, dtype=np.int8)
+    out = np.zeros(len(input_data) // 8, dtype=np.uint8)
 
     for i in range(len(out)):
         this_byte = 0
@@ -61,7 +62,7 @@ def convert_audio(data, samplerate):
     )
 
     # Resample to target sample rate
-    audio_segment = audio_segment.set_frame_rate(SAMPLE_RATE)
+    audio_segment = audio_segment.set_frame_rate(samplerate)
 
     # Convert audio to floats between -1 and 1
     audio_float = np.array(audio_segment.get_array_of_samples(), dtype=np.float32) / np.iinfo(np.int16).max

@@ -1,3 +1,7 @@
 opencv-python
 Pillow
 python-ffmpeg
+numpy
+scipy
+soundfile
+ffmpeg-python

@@ -39,7 +39,7 @@ monitor.setTextScale(1)
 term.redirect(monitor)
 
 function audioLoop()
-    local decoder = dfpwm.make_decoder()
+    local decoder = dfpwm.make_decoder(11025) -- added sanmmple rate
     for chunk in io.lines(audioFile, 16 * 1024) do
         local buffer = decoder(chunk)
         while not speaker.playAudio(buffer, 3) do
